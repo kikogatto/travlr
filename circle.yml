@@ -2,6 +2,12 @@ machine:
   node:
     version: 0.10.40
 
+dependencies:
+  override:
+    - cd mobile
+    - npm install
+
 test:
   override:
-    - 'grunt --gruntfile /mobile/Gruntfile.js test'
+    - 'cd mobile'
+    - 'grunt test'
