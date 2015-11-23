@@ -299,6 +299,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', function (target) {
         grunt.task.run([
+            'bower:install',
             'clean:test',
             'ngtemplates',
             'jshint',
