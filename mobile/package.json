@@ -11,7 +11,6 @@
     "grunt": "0.4.1"
   },
   "devDependencies": {
-    "grunt-cli": "*",
     "grunt": "~0.4.1",
     "grunt-angular-templates": "^0.5.7",
     "grunt-autoprefixer": "~0.5.0",
