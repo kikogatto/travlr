@@ -1,0 +1,19 @@
+<section>
+    <div class="bar bar-standard bar-footer-secondary">
+      <div ng-include='addPanel' ></div>
+    </div>
+    <nav class="bar bar-tab">
+        <a class="tab-item"  ng-click='selectTab(0)'>
+        	<span class="icon"><i class='fa {{tabs[0]}}'></i></span>
+        	<span class="tab-label">2 way trip</span>
+        </a>
+        <a class="tab-item"  ng-click='selectTab(1)'>
+            <span class="icon"><i class='fa {{tabs[1]}}'></i></span>
+            <span class="tab-label">Favorites</span>
+        </a>
+        <a class="tab-item"  ng-click='selectTab(2)'>
+        	<span class="icon"><i class='fa {{tabs[2]}}'></i></span>
+        	<span class="tab-label">Engagement</span>
+        </a>
+    </nav>
+</section>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="travlr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travlr</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- build:css(.tmp) assets/travlr.min.css -->
+    <link rel="stylesheet" href="ratchet/ratchet.css">
+    <link rel="stylesheet" href="assets/styles/travlr.css">
+    <!-- endbuild -->
+
+    <!-- build:js(.tmp) dependencies.min.js -->
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <script src="angular/angular.js" type="text/javascript"></script>
+    <script src="angular-cookies/angular-cookies.js" type="text/javascript"></script>
+    <script src="angular-resource/angular-resource.js" type="text/javascript"></script>
+    <script src="angular-sanitize/angular-sanitize.js" type="text/javascript"></script>
+    <script src="angular-route/angular-route.js" type="text/javascript"></script>
+    <script src="angular-animate/angular-animate.js" type="text/javascript"></script>
+    <!-- endbuild -->
+
+    <!-- build:js(.tmp) travlr.min.js -->
+    <script src="travlr.js"></script>
+    <script src="assets/directives/masthead/masthead.js"></script>
+    <script src="assets/scripts/utils.js"></script>
+    <script src="components/trips/trips.js"></script>
+    <script src="components/engagements/engagements.js"></script>
+    <script src="templates.js"></script>
+    <!-- endbuild -->
+
+  <script src="config.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div ng-view id='appWrapper'></div>
+  </body>
+</html>
