@@ -5,9 +5,9 @@ machine:
 dependencies:
   override:
     - npm install
-    	pwd: mobile
+        pwd: mobile
 
 test:
   override:
     - grunt test
-    	pwd: mobile
+        pwd: mobile
