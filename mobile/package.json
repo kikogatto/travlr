@@ -4,7 +4,6 @@
   "description":"Travel booking app",
   "repository":"https://github.com/kikogatto/travlr.git",
   "scripts": {
-  // Map `npm test` to `grunt test` for extra awesome
     "test": "grunt test"
   },
   "dependencies": {
