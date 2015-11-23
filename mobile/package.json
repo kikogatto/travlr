@@ -3,7 +3,14 @@
   "version": "0.0.1",
   "description":"Travel booking app",
   "repository":"https://github.com/kikogatto/travlr.git",
-  "dependencies": {},
+  "scripts": {
+  // Map `npm test` to `grunt test` for extra awesome
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt-cli": "*",
+    "grunt": "0.4.x"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-angular-templates": "^0.5.7",

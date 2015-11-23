@@ -9,5 +9,5 @@ dependencies:
 
 test:
   override:
-    - grunt test:
+    - npm test:
         pwd: mobile
