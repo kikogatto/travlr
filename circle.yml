@@ -4,10 +4,8 @@ machine:
 
 dependencies:
   override:
-    - cd mobile
-    - npm install
+    - npm install mobile/package.json
 
 test:
   override:
-    - 'cd mobile'
-    - 'grunt test'
+    - 'grunt --gruntfile /mobile/Gruntfile.js test'
