@@ -4,8 +4,12 @@ machine:
 
 dependencies:
   override:
-    - npm install mobile/package.json
+    - npm install
+      pwd:
+        mobile
 
 test:
   override:
-    - 'grunt --gruntfile /mobile/Gruntfile.js test'
+    - grunt test
+    	pwd:
+    		mobile
