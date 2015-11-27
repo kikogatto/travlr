@@ -4,7 +4,7 @@
 /************************************************************************************************
  * Module definition
  ************************************************************************************************/
-var engagementsModule = angular.module('engagements', ['travlr']);
+var engagementsModule = angular.module('engagements', []);
 
 
 // engagementsModule.directive('newEngagement', [  function () {

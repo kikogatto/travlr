@@ -14,8 +14,9 @@ describe('The Trips module', function() {
 
     it('should have these requirements', function() {
         var trips = angular.module('trips');
-        expect(trips.requires.length).toBe(1);
-        expect(trips.requires).toContain('travlr');
+        expect(trips.requires.length).toBe(2);
+        expect(trips.requires).toContain('ngRoute');
+        expect(trips.requires).toContain('compiledTemplates');
     });
 });
 
