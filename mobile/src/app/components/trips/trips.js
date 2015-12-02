@@ -4,7 +4,7 @@
 /************************************************************************************************
  * Module definition
  ************************************************************************************************/
-var tripsModule = angular.module('trips', ['ngRoute','compiledTemplates']);
+var tripsModule = angular.module('trips', ['ngRoute','airports', 'compiledTemplates']);
 
 tripsModule.config( ['$routeProvider', function ( $routeProvider ) {
     $routeProvider.when('/trips', { templateUrl: 'components/trips/trips.html', controller: 'TripsController', requires:[] });
