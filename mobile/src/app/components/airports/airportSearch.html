@@ -1,0 +1,13 @@
+<section class='airportSearch'>
+    <div>{{label}}</div>
+    <button class="btn" ng-click='toggleAirports()'>{{selectedAirport.code}}</button>
+    <div>{{selectedAirport.city}}</div>
+	<div class="popover" ng-if='airports.open'>
+	    <input type='text' ng-model='airports.query' ng-change='findAirport()'>
+	    <ul ng-if='airports.size > 0'>
+	    	<li ng-repeat="airport in airports.list track by airport.code" ng-click='selectAirport(airport)'>
+	    		{{airport.name}}
+	    	</li>
+	    </ul>
+	</div>
+</section>
