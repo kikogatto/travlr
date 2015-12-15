@@ -36,7 +36,8 @@ tripsModule.directive('addSomething', [  function () {
             var panels = ['components/trips/addTwoWayTrip.html', 'components/favorites/addFavorite.html', 'components/engagements/addEngagement.html'];
             scope.addPanel = 'assets/empty.html';
 
-
+            $(iElement).children('.bar-footer-secondary').css('height', '0px');
+            $(iElement).children('.bar-footer-secondary').css('max-height', '0px');
             scope.selectTab = function( tab ) {
                 if( angular.isDefined( selectedTab )) {
                     scope.tabs[selectedTab]=tabs[selectedTab];
@@ -44,6 +45,7 @@ tripsModule.directive('addSomething', [  function () {
                         selectedTab = undefined;
                         scope.addPanel = 'assets/empty.html';
                         $(iElement).children('.bar-footer-secondary').css('height', '0px');
+                        $(iElement).children('.bar-footer-secondary').css('max-height', '0px');
                         return;
                     }
                 }
@@ -51,6 +53,7 @@ tripsModule.directive('addSomething', [  function () {
                 scope.addPanel = panels[selectedTab];
                 scope.tabs[selectedTab] = 'fa-minus';
                 $(iElement).children('.bar-footer-secondary').css('height', '450px');
+                $(iElement).children('.bar-footer-secondary').css('max-height', '450px');
             };
         }
     };

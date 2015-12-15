@@ -6,7 +6,7 @@
  * Module definition
  ************************************************************************************************/
 var travlrModule = angular.module('travlr', ['ngRoute', 'ngResource', 'ngAnimate', 'ngSanitize',
- 'masthead',
+ 'backgroundMenu','masthead',
  'trips', 'engagements',
  'compiledTemplates']);
 

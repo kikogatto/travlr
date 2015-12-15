@@ -57,7 +57,7 @@ describe('The addSomething directive', function() {
 
     it('should replace the element with the appropriate content', function() {
         expect( $(element).prop('tagName') ).toEqual('SECTION');
-        expect( $(element).attr('class')).toBe('ng-isolate-scope');
+        expect( $(element).attr('class')).toBe('add-something ng-isolate-scope');
     });
     it('should add a tabs array with all 3 icons to the scope', function() {
         var scope = element.isolateScope();

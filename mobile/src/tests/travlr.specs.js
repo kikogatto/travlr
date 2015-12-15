@@ -14,7 +14,7 @@ describe('The travlr module', function() {
 
     it('should have these requirements', function() {
         var openFlame = angular.module('travlr');
-        expect(openFlame.requires.length).toBe(8);
+        expect(openFlame.requires.length).toBe(9);
         expect(openFlame.requires).toContain('ngRoute');
         expect(openFlame.requires).toContain('ngResource');
         expect(openFlame.requires).toContain('ngAnimate');
