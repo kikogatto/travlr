@@ -1,0 +1,63 @@
+//import "bower_components/bootstrap/less/bootstrap.less";
+@import "fixBootstrap.less";
+//@import "../../assets/directives/backgroundMenu/backgroundMenu.less";
+//@import "../../components/airports/airports.less";
+
+.content {
+	z-index:1;
+}
+
+travlr > section {
+	&.closed {
+		.bar, .content {
+			left:0;
+			right:0;
+			transition: left 0.3s ease-in;
+			transition: right 0.3s ease-in;
+	    }
+	    .content {
+	    	box-shadow: none;
+	    }
+	}
+	&.open {
+		.bar, .content {
+			left:-150px;
+			right:150px;
+			transition: left 0.3s ease-in;
+			transition: right 0.3s ease-in;
+	    }
+	    .content {
+	    	box-shadow: 5px 0px 10px #0A0A0A;
+	    }
+	}
+}
+.bar-nav, .bar-tab, .bar-footer-secondary {
+	background-color: @navbar-default-bg;
+	color:@navbar-default-color;
+	i, h1 {
+	    color:@navbar-default-color;
+	}
+}
+
+.toolbar .bar-footer-secondary {
+	height:300px;
+	&.closed {
+		max-height:0px;
+		box-shadow: none;
+		transition: max-height 0.3s ease-in;
+	}
+	&.open {
+		max-height:300px;
+		box-shadow: 0px -5px 10px #0A0A0A;
+		transition: max-height 0.3s ease-in;
+	}
+}
+
+.backgroundMenu {
+	position:fixed;
+	width:150px;
+	height: 100%;
+	background-color: #A0A0A0;
+	top:0;
+	right:0;
+}
